@@ -1,15 +1,15 @@
 vim.g.mapleader = " "
 
-local keymap = vim.keymap
+vim.keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
-keymap.set("n", "<leader>nh", ":nohl<CR>")
+vim.keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) 
+vim.keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) 
+vim.keymap.set("n", "<leader>sx", ":close<CR>", { desc = "Close current split window" }) 
+vim.keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make split windows equal width" }) 
 
-keymap.set("n", "<leader>sv", "<C-w>v") -- Split window vertically
-keymap.set("n", "<leader>sh", "<C-w>s") -- Split window horizontally
-keymap.set("n", "<leader>sx", ":close<CR>") -- Close current split window
-keymap.set("n", "<leader>se", "<C-w>=") -- Make split windows equal width
+vim.keymap.set("n", "<leader>to", ":tabnew<CR>", { desc = "Open new tab" }) 
+vim.keymap.set("n", "<leader>tx", ":tabclose<CR>", { desc = "Close current tab" }) 
+vim.keymap.set("n", "<leader>tn", ":tabn<CR>", { desc = "Next tab" }) 
+vim.keymap.set("n", "<leader>tp", ":tabp<CR>", { desc = "Previous tab" }) 
 
-keymap.set("n", "<leader>to", ":tabnew<CR>") -- Open new tab
-keymap.set("n", "<leader>tx", ":tabclose<CR>") -- Close current tab
-keymap.set("n", "<leader>tn", ":tabn<CR>") -- Next tab
-keymap.set("n", "<leader>tp", ":tabp<CR>") -- Previous tab
+vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Find files" }) 
