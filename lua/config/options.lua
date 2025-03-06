@@ -1,5 +1,10 @@
 local opt = vim.opt
 
+-- Disable netrw in favor of nvim-tree
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+vim.opt.termguicolors = true
+
 -- Line numbers
 opt.relativenumber = true
 opt.number = true
