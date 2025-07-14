@@ -4,9 +4,9 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
 -- Window management
-vim.keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" }) 
-vim.keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) 
-vim.keymap.set("n", "<leader>sx", ":close<CR>", { desc = "Close current split window" }) 
+vim.keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
+vim.keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
+vim.keymap.set("n", "<leader>sx", ":close<CR>", { desc = "Close current split window" })
 vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to left window" })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to bottom window" })
 vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to top window" })
