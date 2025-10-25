@@ -7,7 +7,14 @@ return {
   config = function()
     require("mason").setup()
     require("mason-lspconfig").setup({
-      ensure_installed = { "lua_ls" },
+      ensure_installed = {
+        "lua_ls",
+        "ts_ls",     -- TypeScript/JavaScript
+        "html",      -- HTML
+        "cssls",     -- CSS
+        "jsonls",    -- JSON
+        "eslint",    -- ESLint for JavaScript/TypeScript linting
+      },
       handlers = {
         function(server_name)
           local capabilities = require("cmp_nvim_lsp").default_capabilities()
