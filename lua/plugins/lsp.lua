@@ -9,11 +9,11 @@ return {
     require("mason-lspconfig").setup({
       ensure_installed = {
         "lua_ls",
-        "ts_ls",     -- TypeScript/JavaScript
-        "html",      -- HTML
-        "cssls",     -- CSS
-        "jsonls",    -- JSON
-        "eslint",    -- ESLint for JavaScript/TypeScript linting
+        "ts_ls",
+        "html",
+        "cssls",
+        "jsonls",
+        "eslint",
       },
       handlers = {
         function(server_name)
