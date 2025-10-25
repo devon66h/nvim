@@ -31,7 +31,5 @@ opt.splitbelow = true
 -- Keyword
 opt.iskeyword:append("-")
 
--- nvim-tree, disable netrw in favor of nvim-tree and enable 24-bit color
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+-- Enable 24-bit color
 vim.opt.termguicolors = true
